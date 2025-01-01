@@ -10,7 +10,7 @@ const swaggerOptions: Options = {
     },
     servers: [
       {
-        url: "http://localhost:3000", // Update with your server's base URL
+        url: "http://localhost:3000",
       },
     ],
     components: {

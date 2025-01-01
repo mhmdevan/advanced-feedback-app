@@ -6,14 +6,11 @@ import swaggerOptions from "./config/swagger.config";
 const app = express();
 const PORT = 3000;
 
-// Swagger setup
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
 app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
-// Middleware
 app.use(express.json());
 
-// Routes
 import userRoutes from "./routes/user.routes";
 import feedbackRoutes from "./routes/feedback.routes";
 import upvoteRoutes from "./routes/upvote.routes";
